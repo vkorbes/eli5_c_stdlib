@@ -13,7 +13,7 @@ char *(strcpy)(char *dest, const char *src) {
 	while (*src != '\0') {
 	    *temp = *src;
 	    temp++;
-	    *src++;
+	    src++;
 	};
 	*temp = '\0';
 	return (dest);
