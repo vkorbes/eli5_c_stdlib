@@ -8,9 +8,9 @@
 // The memcpy function returns the value of dest. 
 
 void *(memcpy)(void *dest, const void *src, size_t size) {
-	char *tempDest = (char *)dest;
-	char *tempSrc = (char *)src;
-	while (size > 0) {
+	char *tempDest = dest;
+	const char *tempSrc = src;
+	while (size != 0) {
 	    *tempDest = *tempSrc;
 	    tempDest++, tempSrc++, size--;
 	};
